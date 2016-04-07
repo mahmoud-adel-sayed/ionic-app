@@ -1,0 +1,29 @@
+<ion-view view-title="Create Post">
+  <ion-content>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Post Title</span>
+        <input type="text" placeholder="Title" ng-model="data.title">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Post Content</span>
+        <input type="text" placeholder="Content" ng-model="data.content">
+      </label>
+    </div>
+
+    <div class="padding-2">
+        <button class="button button-block button-outline button-positive" ng-click="openAction()">Upload an image</button>
+    </div>
+
+    <div class="padding">
+      <img id="postImage" class="post-pic" ng-src="{{image}}">
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="create(data)">Create Post</button>
+    </div>
+
+  </ion-content>
+</ion-view>

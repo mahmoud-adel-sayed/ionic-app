@@ -1,0 +1,27 @@
+<ion-modal-view view-title="Edit Post">
+
+  <ion-header-bar class="bar-positive fix-buttons">
+    <button class="button" ng-click="cancel()">Cancel</button>
+    <h1 class="title">{{post.title}}</h1>
+    <button class="button" ng-click="saveItem(post)"  animate-on-loading>Save</button>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="row">
+      <div class="col">
+        <label class="item item-input large">
+          <input type="text" placeholder="Title" ng-model="post.title">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="item item-input text">
+          <textarea placeholder="Content" rows="8" ng-model="post.content"></textarea>
+        </label>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-modal-view>

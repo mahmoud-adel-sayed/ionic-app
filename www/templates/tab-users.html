@@ -1,0 +1,11 @@
+<ion-view view-title="Users">
+  <ion-content>
+    <div class="list">
+      <a class="item item-avatar" href="#" ng-repeat="user in users">
+        <img ng-src="{{user.aws}}" src="img/about.png">
+        <h2>{{user.username}}</h2>
+        <p>{{user.email}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

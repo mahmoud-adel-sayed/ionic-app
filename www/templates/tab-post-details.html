@@ -1,0 +1,65 @@
+<ion-view view-title="Post Details">
+  <ion-content>
+    <div class="row">
+      <div class="col">
+        <img ng-show="post.aws" ng-src="{{post.aws}}" style="width: 100%;">
+
+        <div ng-show="owner">
+          <button class="button button-small button-outline button-positive" ng-click="editPost(post)">Edit</button>
+          <button class="button button-small button-outline button-assertive" ng-click="deletePost(post._id)">Delete</button>
+        </div>
+
+        <h4 ng-bind="post.title"></h4>
+
+        <small class="comment-date">
+          <em>Posted on: </em>
+          <em ng-bind="post.created | date:'mediumDate'"></em>
+          <br />
+          <em>Author:</em>
+          <em ng-bind="post.creator.username"></em>
+        </small>
+
+        <p ng-bind="post.content"></p>
+      </div><!-- /col -->
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col col-67 col-center">
+        <label class="item item-input">
+          <input type="text" placeholder="Content" ng-model="comment.content" />
+        </label>
+      </div>
+      <div class="col col-center">
+        <button class="button button-block button-outline button-balanced" ng-click="sendComment()" ng-disabled="{{discom}}">Comment</button>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-outline button-positive" ng-click="showComments(post._id)">Load Comments</button>
+        <div class="text-center" ng-show="loading">
+          <ion-spinner></ion-spinner>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="comments-holder">
+          <div class="padding" ng-repeat="comment in comments">
+            <strong ng-bind="comment.userId.username"></strong>
+            <h6 class="comment-date">
+              <em>Date: </em>
+              <em ng-bind="comment.created | date:'mediumDate'"></em>
+            </h6>
+            <p ng-bind="comment.content"></p>
+
+            <hr />
+          </div>
+
+          <h4 class="text-center assertive" ng-show="comments ==0">There is no comments yet</h4>
+
+        </div><!-- /comments-holder -->
+      </div><!-- /col -->
+    </div><!-- /row -->
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,47 @@
+/* Empty. Add your own CSS if you like */
+a{
+  text-decoration: none;
+}
+.comment-date{
+  color: #888;
+}
+
+/* profile */
+.profile-holder{
+  position: relative;
+}
+.profile-pic{
+  width: 250px;
+  height: 250px;
+  margin: 20px 0 30px 0;
+
+  border-radius: 250px;
+  -moz-border-radius: 250px;
+  -webkit-border-radius: 250px;
+  -ms-border-radius: 250px;
+}
+#edit-image , #save-image{
+  position: absolute;
+  bottom: 10px;
+}
+#edit-image{
+  left: 0;
+}
+#save-image{
+  right: 0;
+}
+
+/* posts */
+.space{
+  height: 50px;
+}
+.comments-holder{
+  margin-top: -40px;
+}
+.padding-2{
+  padding: 0 10px 20px 10px;
+}
+.post-pic{
+  width: 100%;
+  max-height: 300px;
+}

@@ -1,0 +1,34 @@
+<ion-view view-title="Registration" name="tab-register">
+  <ion-content>
+      <div class="list">
+          <label class="item item-input item-floating-label">
+              <span class="input-label">First Name</span>
+              <input type="text" placeholder="First Name" ng-model="data.firstName">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Last Name</span>
+              <input type="text" placeholder="Last Name" ng-model="data.lastName">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Email</span>
+              <input type="text" placeholder="Email" ng-model="data.email">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Username</span>
+              <input type="text" placeholder="Username" ng-model="data.username">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Password</span>
+              <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Confirm-Password</span>
+              <input type="password" placeholder="Confirm Password" ng-model="data.passwordConfirm">
+          </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="register(data)">Create Account</button>
+        <p class="text-center"><a href="#/login">I have an account</a></p>
+      </div>
+  </ion-content>
+</ion-view>

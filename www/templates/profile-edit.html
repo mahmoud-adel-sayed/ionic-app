@@ -1,0 +1,43 @@
+<ion-view view-title="Edit Profile">
+  <ion-content>
+
+    <div class="row">
+      <div class="col">
+        <label class="item item-input large">
+          <input type="text" placeholder="Username" ng-model="data.username">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="item item-input large">
+          <input type="text" placeholder="First Name" ng-model="data.firstName">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="item item-input large">
+          <input type="text" placeholder="Last Name" ng-model="data.lastName">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="item item-input large">
+          <input type="text" placeholder="Email" ng-model="data.email">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-block button-positive" ng-click="edit(data)">Edit Profile</button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

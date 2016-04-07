@@ -1,0 +1,10 @@
+{
+  "name": "myapp",
+  "app_id": "4773e6bc",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://mahmoud-adel.herokuapp.com/api"
+    }
+  ]
+}
