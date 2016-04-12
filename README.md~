@@ -13,4 +13,4 @@ this is an ionic mobile application sample.
 4. test the app on the browser by typing ($ ionic serve --lab).
 
 ### Other information
-This app makes http requests to a REST Api hosted on heroku and this is the [link](https://github.com/mahmoud-adel-sayed/node-rest-api) to project sample.
+This app makes http requests to a REST Api hosted on heroku
